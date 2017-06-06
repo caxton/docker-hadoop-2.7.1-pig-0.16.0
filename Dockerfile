@@ -7,3 +7,6 @@ RUN tar xzf pig-0.16.0.tar.gz
 ENV PATH $PATH:/pig-0.16.0/bin
 
 ENV PATH="$PATH:/usr/local/hadoop-2.7.1/bin:/usr/local/hadoop-2.7.1/sbin"
+
+RUN mkdir /home/pig/
+COPY ./pig_data /home/pig/
